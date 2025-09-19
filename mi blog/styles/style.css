@@ -1,0 +1,15 @@
+    .footer-social {
+      background-color: #222; 
+      color: #fff;
+      padding: 15px 0;
+      margin-top: 30px; 
+    }
+    .footer-social a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none; 
+      font-size: 20px;
+    }
+    .footer-social span {
+        margin-right: 15px;
+    }

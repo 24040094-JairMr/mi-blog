@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jair Montes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f0f4ff, #dbe4ff);
+      color: #333;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    header {
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 60px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    header h3 {
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #4e54c8;
+      position: relative;
+    }
+
+    section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #8f94fb;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    section p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .hobbies {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .hobbies figure {
+      text-align: center;
+    }
+
+    .hobbies a {
+      display: inline-block;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .hobbies a img {
+      width: 140px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease, filter 0.4s ease;
+      border: 4px solid #fff;
+    }
+
+    .hobbies a:hover {
+      transform: scale(1.1);
+    }
+
+    .hobbies a img:hover {
+      filter: brightness(1.1);
+      transform: scale(1.15);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .hobbies figcaption {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .comentarios a {
+      display: inline-block;
+      padding: 14px 30px;
+      background-color: #4e54c8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .comentarios a:hover {
+      background-color: #3b3fc1;
+      transform: scale(1.05);
+    }
+
+    .footer-social {
+      background-color: #222;
+      color: #fff;
+      padding: 25px 0;
+      margin-top: 50px;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+    }
+
+    .footer-social span {
+      font-size: 18px;
+      margin-right: 15px;
+    }
+
+    .footer-social a {
+      color: #fff;
+      margin: 0 12px;
+      font-size: 24px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      color: #8f94fb;
+      transform: scale(1.2);
+    }
+
+    .footer-social .email {
+      margin-left: 25px;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section, .hobbies a, .comentarios a {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jair Montes</h1>
+    <h3>Cada día es una oportunidad para reinventarte</h3>
+  </header>
+
+  <section>
+    <h2>¿Quién soy?</h2>
+    <p>Soy alguien curioso, apasionado por aprender y con ganas de dejar huella. Me encanta conectar ideas, compartir experiencias y crecer junto a otros.</p>
+  </section>
+
+  <section>
+    <h2>Lo que me mueve</h2>
+    <div class="hobbies">
+      <figure>
+        <a href="hobbie1.html"><img src="image/deporte.png" alt="Deporte"></a>
+        <figcaption>🏃‍♂️ Actividad física para liberar energía</figcaption>
+      </figure>
+      <figure>
+        <a href="hobbie2.html"><img src="image/caminata.png" alt="Caminata"></a>
+        <figcaption>🌄 Caminatas para despejar la mente</figcaption>
+      </figure>
+      <figure>
+        <a href="hobbie3.html"><img src="image/musica.png" alt="Música"></a>
+        <figcaption>🎧 Música que me inspira y me acompaña</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="comentarios">
+    <h2><a href="comentarios.html">¿Tienes algo que decir? ¡Exprésate aquí!</a></h2>
+  </section>
+
+  <div class="footer-social">
+    <span>Redes Sociales</span>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <span class="email"><i class="fas fa-envelope"></i> 24040094@alumno.utc.edu.mx</span>
+  </div>
+
+</body>
+</html>
